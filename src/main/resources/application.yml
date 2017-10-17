@@ -1,0 +1,7 @@
+# Application Configuration For initializr
+
+# Global Configuration
+#logging:
+#  level:
+#    org.hibernate.SQL: TRACE
+    
