@@ -4,8 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-// TODO: 08.02.16 написать ТЗ на задачу
-
 @SpringBootApplication
 public class JrttApplication {
 
