@@ -32,6 +32,8 @@ public class VaadinUI extends UI {
     private Grid grid;
     private TaskEditor editor;
     private Button addNewBtn;
+    private Button selDoneTasckBtn;
+	private Button selUnDoneTasckBtn;
 
     @Autowired
     public VaadinUI(TaskRepository repo, TaskEditor editor) {
@@ -41,6 +43,10 @@ public class VaadinUI extends UI {
 	this.grid = new Grid();
 	this.addNewBtn = new Button("Добавить задачу");
 	addNewBtn.addStyleName("btn btn-success");
+	this.selDoneTasckBtn = new Button("Показать выполненные");
+	selDoneTasckBtn.addStyleName("btn btn-success");
+	this.selUnDoneTasckBtn = new Button("Показать НЕвыполненные");
+	selUnDoneTasckBtn.addStyleName("btn btn-success");
     }
 
     @Override
@@ -60,7 +66,7 @@ public class VaadinUI extends UI {
 	}
 	
 	
-	VerticalLayout actions = new VerticalLayout(addNewBtn, grid);
+	VerticalLayout actions = new VerticalLayout(addNewBtn, grid, selDoneTasckBtn, selUnDoneTasckBtn);
 	HorizontalLayout mainLayout = new HorizontalLayout(actions, editor);
 
 	// actions.setSpacing(true);
@@ -98,6 +104,7 @@ public class VaadinUI extends UI {
 
 	grid.setContainerDataSource(new BeanItemContainer<>(Task.class, (Collection<? extends Task>) 
 		repo.findAll(new PageRequest(0, 18)).getContent()));
+
 
     }
 

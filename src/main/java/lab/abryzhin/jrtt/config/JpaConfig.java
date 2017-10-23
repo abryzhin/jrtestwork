@@ -8,7 +8,6 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
-//@EnableJpaRepositories("lab.pawigor.jrtt.entity.repo")
 @EnableJpaRepositories("lab.abryzhin.jrtt.entity.repo")
 public class JpaConfig {
 
