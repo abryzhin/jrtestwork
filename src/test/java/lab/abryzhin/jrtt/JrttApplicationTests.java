@@ -1,4 +1,5 @@
-package lab.pawigor.jrtt;
+//package lab.pawigor.jrtt;
+package lab.abryzhin.jrtt;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

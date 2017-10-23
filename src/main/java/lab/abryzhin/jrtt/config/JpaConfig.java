@@ -1,4 +1,4 @@
-package lab.pawigor.jrtt.config;
+package lab.abryzhin.jrtt.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,8 +8,8 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableJpaRepositories("lab.pawigor.jrtt.entity.repo")
-
+//@EnableJpaRepositories("lab.pawigor.jrtt.entity.repo")
+@EnableJpaRepositories("lab.abryzhin.jrtt.entity.repo")
 public class JpaConfig {
 
     @Bean

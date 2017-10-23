@@ -1,4 +1,4 @@
-package lab.pawigor.jrtt;
+package lab.abryzhin.jrtt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

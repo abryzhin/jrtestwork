@@ -1,8 +1,10 @@
-package lab.pawigor.jrtt.ui;
+package lab.abryzhin.jrtt.ui;
 
 import java.util.Collection;
 import java.util.Map;
 
+import lab.abryzhin.jrtt.entity.Task;
+import lab.abryzhin.jrtt.entity.repo.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 
@@ -15,11 +17,8 @@ import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
-import lab.pawigor.jrtt.entity.Task;
-import lab.pawigor.jrtt.entity.repo.TaskRepository;
-
-// TODO: 08.02.16 добавить фильтр выполненые/не выполненые/все
-// TODO: 08.02.16 добавить изменение isDone из grid
+// TODO: добавить фильтр выполненые/не выполненые/все
+// TODO: добавить изменение isDone из grid
 
 @SpringUI
 public class VaadinUI extends UI {
@@ -98,7 +97,7 @@ public class VaadinUI extends UI {
     private void listTasks() {
 
 	grid.setContainerDataSource(new BeanItemContainer<>(Task.class, (Collection<? extends Task>) 
-		repo.findAll(new PageRequest(1, 1)).getContent()));
+		repo.findAll(new PageRequest(0, 18)).getContent()));
 
     }
 

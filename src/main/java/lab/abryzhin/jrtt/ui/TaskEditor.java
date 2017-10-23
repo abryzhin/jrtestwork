@@ -1,5 +1,6 @@
-package lab.pawigor.jrtt.ui;
+package lab.abryzhin.jrtt.ui;
 
+import lab.abryzhin.jrtt.entity.repo.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
@@ -15,8 +16,7 @@ import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 
-import lab.pawigor.jrtt.entity.Task;
-import lab.pawigor.jrtt.entity.repo.TaskRepository;
+import lab.abryzhin.jrtt.entity.Task;
 
 @SpringComponent
 @UIScope

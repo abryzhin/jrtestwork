@@ -1,4 +1,4 @@
-package lab.pawigor.jrtt.entity;
+package lab.abryzhin.jrtt.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +11,7 @@ public class Task {
     @Id
     @GeneratedValue
     private Long id;
+
     private String description;
     private Boolean isDone;
     private Date dueDate;
